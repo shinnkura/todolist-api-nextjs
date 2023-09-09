@@ -24,6 +24,7 @@ const search = async (searchTerm: string) => {
     return data;
 }
 
+// TODO: 画面に表示されれない原因究明
 async function SearchResults({ params: { searchTerm } }: PageProps) {
     const searchResults = await search(searchTerm);
     return (
@@ -42,4 +43,4 @@ async function SearchResults({ params: { searchTerm } }: PageProps) {
     );
 }
 
-export default SearchResults
+export default SearchResults;
